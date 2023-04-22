@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Transaction History
+{% endblock %}
+{% block main %}
+    <h1>
+        {{ user }}'s Transactions:
+    </h1>
+    <table class = table>
+        <thead>
+            <tr>
+                <th scope="col">Transaction #</th>
+                <th scope="col">Symbol</th>
+                <th scope="col">Company</th>
+                <th scope="col">Shares</th>
+                <th scope="col">Total Owned</th>
+                <th scope="col">Price</th>
+                <th scope="col">Type</th>
+                <th scope="col">date</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for dict in history %}
+            <tr scope="row">
+                <td>{{dict["user_transaction"]}}</td>
+                <td>{{dict["symbol"]}}</td>
+                <td>{{dict["company"]}}</td>
+                <td>{{dict["shares"]}}</td>
+                <td>{{dict["total_shares"]}}</td>
+                <td>{{dict["price"]}}</td>
+                <td>{{dict["transaction_type"]}}</td>
+                <td>{{dict["date"]}}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+
+{% endblock %}

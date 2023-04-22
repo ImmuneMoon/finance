@@ -1,0 +1,11 @@
+https://iexcloud.io/console/tokens
+
+In your terminal window, execute:
+$ export API_KEY=value
+
+where value is that (pasted) value, without any space immediately before or after the =. 
+You also may wish to paste that value in a text document somewhere, in case you need it again later.
+
+pk_4231b29ed6064a3b8bfdfd0f80065632
+
+export API_KEY=pk_4231b29ed6064a3b8bfdfd0f80065632

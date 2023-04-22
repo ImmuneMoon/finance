@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Sell Recipt
+{% endblock %}
+{% block main %}
+    <h1>
+        Transaction Complete
+    </h1>
+    <p>
+        Company: {{ name }} ({{ symbol }})
+    </p>
+    <p>
+        Shares Sold: {{ shares }}
+    </p>
+    <p>
+        Total: {{ amount }}
+    </p>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Delete Account
+{% endblock %}
+{% block main %}
+    <h1>Delete Account</h1>
+    <form action="/delete" method="post">
+        <div class="mt-5 mb-3">
+            <h3 class="mb-3"><span style="color:red">Are You Sure You Want to Delete Your Account Forever?</span></h3>
+        </div>
+        <button class="btn btn-danger mt-10" type="submit">Yes I'm Sure</button>
+    </form>
+{% endblock %}

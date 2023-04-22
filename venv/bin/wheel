@@ -1,0 +1,10 @@
+#!/bin/sh
+'''exec' "/Users/ajpage/Documents/Coding/Computer Science/edX/HarvardX/Computer Science for Web Programming/Introduction to Computer Science/Week 9 (Flask)/Pset 9/finance/venv/bin/python3.10" "$0" "$@"
+' '''
+# -*- coding: utf-8 -*-
+import re
+import sys
+from wheel.cli import main
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(main())

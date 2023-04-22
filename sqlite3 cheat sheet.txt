@@ -1,0 +1,6 @@
+open database in terminal: sqlite3 file.db
+run query: cat .sql | sqlite3 .db
+if you want to create a text file: cat .sql | sqlite3 .db  > output .txt
+run sqlite3: sqlite3 .db
+to get database layout: .schema
+to exit sqlite3 program: .quit
